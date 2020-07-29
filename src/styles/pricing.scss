@@ -1,0 +1,211 @@
+
+@import 'variables.scss';
+html{
+    overflow-x:hidden;
+}
+body{
+     background:#Ffffff;
+     overflow-x: hidden;
+     font-family:'Roboto';
+
+     /*-------------------HERO-HEADER--------------------*/
+      #hero-header{
+           height:7vh;
+           width:100vw;
+           background:$white;
+           overflow:hidden;
+           display:block;
+           .header{
+               display:block;
+               width:100vw;
+               height:100%;
+               display:flex;
+               align-items: center;
+               justify-content: space-between;
+               .logo{
+                    margin:15px;
+                    img{
+                         width:24px;
+                         height:24px;
+                    }
+               }
+               .hamburger-div{
+                    margin:15px;
+                    position:relative;
+                    z-index:100;
+                   
+               }
+          }
+          nav{
+               width: 100%;
+               height:100vh;
+               position: fixed;
+               background: black;
+               left: 100%;
+               transition: all .2s ease-in;
+               z-index: 99;
+               -webkit-transition: all .2s ease-in-out;
+               transition: all .2s ease-in-out;
+               top:0;
+               overflow-y: scroll;
+               .mainmenu{
+                    padding:0;
+                    width:100%;
+                    height:100%;
+                    li{
+                         width:100%;
+                         display:flex;
+                         justify-content: center;
+                         flex-direction:column;
+                         min-height:80px;
+                         border:1px solid #4B4B4B;
+                         a{
+                              font-weight:bold;
+                         }
+                         .submenu{
+                              padding:0;
+                              li{
+                                   
+                                   border:none;
+                                   text-align:left;
+                                   margin-top: 20px;
+                                   margin-bottom: 20px;
+                                   padding-left: 40px;
+                                   color:white;
+                                   
+                                   a{
+                                        font-weight:lighter
+                                   }
+                              }
+                         }
+                         div{
+                              span{
+                                   color:#808080;
+                              }
+                              text-align: left;
+                              margin:15px;
+                              width: 30%;
+                              height: 60%;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: flex-start;
+                              justify-content: space-evenly;
+                              margin-left: 20px;
+                         }
+                         a{
+                              text-decoration:none;
+                              color:$white;
+                         }
+                    }
+                    .collapse{
+                         ul{
+                             
+                             overflow:hidden;
+                             max-height:0;
+                             transition: all .5s ease;
+                         }
+                    }
+               }
+          }
+          
+      }
+    
+      .hero{
+          width:100vw;
+          background:$white;
+          position:relative;
+          z-index:1;
+          transition:all .3s ease;          height:93vh;
+          .container{
+              height:100%;
+              padding:0;
+              .row{
+                  span{
+                      color:$orange;
+                  }
+                 height:100%;
+              }
+              .title{
+                  display:flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  height:40%;
+              }
+              .pricing-cells{
+                  height:60%;
+                  .pricing-cell{
+                      &:first-child{
+                          border-top:1px solid $gray-font;
+                      }
+                      height:20%;
+                      border-bottom:1px solid $gray-font;
+                      border-right:none;
+                      border-left:none;
+                      display:flex;
+                      align-items:center;
+                      justify-content: flex-start;
+                      padding-left:15px;
+                  }
+              }
+          }
+      }
+      #hero2{
+        z-index:2;
+          position:absolute;
+          top:7vh;
+          left:100%;
+          .pricing-cell{
+              height:25%!important;
+          }
+      }
+      #hero3{
+        z-index:3;
+        position:absolute;
+        top:7vh;
+        left:100%;
+        .pricing-cell{
+            height:25%!important;
+        }
+    }
+    #hero4{
+        z-index:4;
+        display:block;
+        position:absolute;
+        top:7vh;
+        left:100%;
+        .pricing-cell{
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height:25%!important;
+            input{
+                border:none;
+                border-bottom:1px solid black!important;
+                width:100%;
+                background:none;
+            }
+            &:last-child{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                button{
+                    height:35px;
+                    width:160px;
+                    border:none;
+                    border-radius:24px;
+                    color:white;
+                    background:$light-orange;
+                }
+            }
+
+            }
+        }
+    
+    }
+@media (max-width:576px){
+     body{
+         
+         .container-fluid{
+             width:320px!important;
+     }}}

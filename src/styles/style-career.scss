@@ -1,0 +1,419 @@
+
+@import 'variables.scss';
+body{
+     background:#Ffffff;
+     overflow-x: hidden;
+     font-family:'Roboto';
+     /*-------------------HERO-HEADER--------------------*/
+      #hero-header{
+           height:7vh;
+           width:100vw;
+           background:$white;
+           overflow:hidden;
+           display:block;
+           .header{
+               display:block;
+               width:100vw;
+               height:100%;
+               display:flex;
+               align-items: center;
+               justify-content: space-between;
+               .logo{
+                    margin:15px;
+                    img{
+                         width:24px;
+                         height:24px;
+                    }
+               }
+               .hamburger-div{
+                    margin:15px;
+                    position:relative;
+                    z-index:100;
+                   
+               }
+          }
+          nav{
+               width: 100%;
+               height:100vh;
+               position: fixed;
+               background: black;
+               left: 100%;
+               transition: all .2s ease-in;
+               z-index: 99;
+               -webkit-transition: all .2s ease-in-out;
+               transition: all .2s ease-in-out;
+               top:0;
+               overflow-y: scroll;
+               .mainmenu{
+                    padding:0;
+                    width:100%;
+                    height:100%;
+                    li{
+                         width:100%;
+                         display:flex;
+                         justify-content: center;
+                         flex-direction:column;
+                         min-height:80px;
+                         border:1px solid #4B4B4B;
+                         a{
+                              font-weight:bold;
+                         }
+                         .submenu{
+                              padding:0;
+                              li{
+                                   
+                                   border:none;
+                                   text-align:left;
+                                   margin-top: 20px;
+                                   margin-bottom: 20px;
+                                   padding-left: 40px;
+                                   color:white;
+                                   
+                                   a{
+                                        font-weight:lighter
+                                   }
+                              }
+                         }
+                         div{
+                              span{
+                                   color:#808080;
+                              }
+                              text-align: left;
+                              margin:15px;
+                              width: 30%;
+                              height: 60%;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: flex-start;
+                              justify-content: space-evenly;
+                              margin-left: 20px;
+                         }
+                         a{
+                              text-decoration:none;
+                              color:$white;
+                         }
+                    }
+                    .collapse{
+                         ul{
+                             
+                             overflow:hidden;
+                             max-height:0;
+                             transition: all .5s ease;
+                         }
+                    }
+               }
+          }
+          
+      }
+   
+
+
+
+
+     /*-------------------STICKY FORM--------------------*/
+
+
+
+      #form{
+               top:0;
+               .container{
+                    .escape-form{
+                         display:flex;
+                         align-items:flex-start;
+                         justify-content: flex-end;
+                         font-size:1.5em;
+                         padding:5px!important;
+                    }
+                    .add-file{
+                         display:flex;
+                         align-items:center;
+                         justify-content: center;
+                         color:white;
+                         font-size:15px;
+                         padding:0!important;
+                         p{
+                              margin-bottom:0;
+                              margin-left:1em;
+                         }
+                    }
+                    .form-menu .borders{
+                         padding:1px;
+                         padding-bottom:10px;
+                         padding-left:15px;
+                         margin-right: 10px;
+                         line-height: 1.3;
+                         input, textarea{
+                              background:black;
+                              border:none;
+                              color:white;
+                             
+                              font-size:15px;
+                         }
+                         textarea{
+                              height:29.5vh;
+                         }
+                         div{
+                              color:$orange;
+                              text-align:right;
+                              font-size:11px;
+                              margin-right:10px;
+                         }
+                         span{
+                              font-size:11px;
+                              color:gray;
+                         }
+                         i{   
+                              font-size:1.5em;
+                              color:#fff;
+                         }
+                         height:11vh;
+                         border-bottom:1px solid #F5F5F5;
+                    }
+                    .area{
+                         height:35.5vh!important;
+                    }
+               }
+               
+          }
+
+
+         /*-------------------HERO-------------------*/
+         #hero{
+            background-image:linear-gradient($white,white);
+             .counter{
+                 position:relative;
+                 width:100vw;
+                 height:150px;
+                
+                 h1{
+                    left:15px;
+                    position:absolute;
+                    top:00%;
+                    font-size:116px;
+                    font-weight: bold;
+                    color:white;
+                 }
+                 p{
+                     font-size:40px;
+                     color:black;
+                     position: absolute;
+                     top:0;
+                     font-weight:bold;
+                    left:35px;
+                    top:45px;
+                 }
+             }
+             .container{
+                .row{
+                    .job{
+                        border-top:1px solid white;
+                        padding:35px;
+                        min-height:135px;
+                        .number{
+                           font-size:1em;
+                           color:$gray-font;
+                        }
+                        p{
+                            font-size:20px;
+                        }
+                    }
+                }
+             }
+             
+         }
+     /*-------------------RECRUIT-------------------*/
+
+
+
+     #recruit{
+         height:90vh;
+        .counter{
+            position:relative;
+            width:100vw;
+            min-height:100px;
+           
+            h1{
+               left:15px;
+               position:absolute;
+               top:00%;
+               font-size:116px;
+               font-weight: bold;
+               color:$light-orange;
+            }
+            p{
+                font-size:20px;
+                color:black;
+                position: absolute;
+                top:0;
+                font-weight:bold;
+               left:35px;
+               top:60px;
+            }
+        }
+         .container-fluid{
+          width:400px;
+          overflow-x:hidden;
+         
+          .tree{
+               
+               position:absolute;
+               display:flex;
+               align-items:center;
+               left: 50%;
+               transform: translate(-150px, 0);
+               width:300px;
+               height:600px;
+               img{
+                    @media (min-width:576px){
+                         transform:scale(0.7);
+                    }
+                    transform:scale(0.5);
+                    margin-bottom:50px;
+                    margin-left:10px;
+               }
+          }
+          .row{
+               position: relative;
+               
+               display: flex;
+               align-items: center;
+               @media (max-width:576px){
+                    height:125px;
+               }
+               
+                   
+                    
+               
+               .section-title{
+                    position: absolute;
+                    top: 50%;
+                    left:50px;
+                    margin-top: -1.1em /* height divided by 2;; */;
+                    h2{
+                         font-size:40px;
+                         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+               }
+            h1{
+                top:-60px;
+                font-size:116px;
+                color:white;
+                position:absolute;
+            }
+               .recruit-1{
+                    @media(max-width:576px){
+                         font-size:15px;
+                         margin-bottom:0;
+                         margin-top: 75px;
+                    }
+                    display:block;
+                    font-size:16px;
+                    margin-bottom:90px;
+                    margin-top:10px;
+                    justify-content:flex-end;
+                    text-align:right;
+                    margin-left:40px;
+               
+               }
+               .recruit-2{
+                    @media(max-width:576px){
+                         font-size:15px;
+                         margin-bottom:0;
+                         margin-top: 65px;
+                         margin-right:0;
+                    }
+                    margin-bottom:0;
+                    margin-right:40px;
+                    margin-left: 50px;
+                    justify-content:flex-start!important;
+                    display:block;
+                    font-size:16px;
+                    text-align:right;
+
+               }
+               .recruit-3{
+                    @media(max-width:576px){
+                         font-size:15px;
+                         margin-top: 29px;
+                         margin-left: 30px;
+                    }
+                    margin-bottom:0;
+                    margin-right:40px;
+                    justify-content:flex-start!important;
+                    display:block;
+                    font-size:16px;
+                    text-align:right;
+                    margin-top: 90px;
+                    margin-left: 50px;
+
+               }
+              
+          }
+     }
+     }
+     #jobs{
+        .counter{
+            position:relative;
+            width:100vw;
+            min-height:100px;
+           
+            h1{
+               left:15px;
+               position:absolute;
+               top:00%;
+               font-size:116px;
+               font-weight: bold;
+               color:$light-orange;
+            }
+            p{
+                font-size:20px;
+                color:black;
+                position: absolute;
+                top:0;
+                font-weight:bold;
+               left:35px;
+               top:60px;
+            }
+        }
+        .container{
+            .row{
+                .offer{
+                     &:first-child{
+                          margin-top:50px;
+                     }
+                    margin-top:0px;
+                    padding:20px;
+                    border:1px solid #f5f5f5;
+                    span{
+                        color:$orange;
+                        font-size:1em;
+                    }
+                    p{
+                        font-size:1em;
+                    }
+                    h4{
+                        font-size:1em;
+                        font-weight:bold;
+                    }
+                    img{
+                        cursor:pointer;
+                    }
+                    
+                }
+                .offer-toggle{
+                    max-height:0;
+                    transition:all .3s ease-in-out;
+                    overflow:hidden;
+                }
+            }
+        }
+     }
+     
+}
+
+@media (max-width:576px){
+     body{
+         
+         .container-fluid{
+             width:320px!important;
+     }}}

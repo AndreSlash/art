@@ -1,0 +1,518 @@
+
+@import 'variables.scss';
+body{
+     background:#fff;
+     overflow-x: hidden;
+     font-family:'Roboto';
+     /*-------------------HERO-HEADER--------------------*/
+      #hero-header{
+           height:10vh;
+           width:100vw;
+           background:$white;
+           overflow:hidden;
+           display:block;
+           .header{
+               display:block;
+               width:100vw;
+               height:100%;
+               display:flex;
+               align-items: center;
+               justify-content: space-between;
+               .logo{
+                    margin:15px;
+                    img{
+                         width:24px;
+                         height:24px;
+                    }
+               }
+               .hamburger-div{
+                    margin:15px;
+                    position:relative;
+                    z-index:100;
+                   
+               }
+          }
+          nav{
+               width: 100%;
+               height:100vh;
+               position: fixed;
+               background: black;
+               left: 100%;
+               transition: all .2s ease-in;
+               z-index: 99;
+               -webkit-transition: all .2s ease-in-out;
+               transition: all .2s ease-in-out;
+               top:0;
+               overflow-y: scroll;
+               .mainmenu{
+                    padding:0;
+                    width:100%;
+                    height:100%;
+                    li{
+                         width:100%;
+                         display:flex;
+                         justify-content: center;
+                         flex-direction:column;
+                         min-height:80px;
+                         border:1px solid #4B4B4B;
+                         a{
+                              font-weight:bold;
+                         }
+                         .submenu{
+                              padding:0;
+                              li{
+                                   
+                                   border:none;
+                                   text-align:left;
+                                   margin-top: 20px;
+                                   margin-bottom: 20px;
+                                   padding-left: 40px;
+                                   color:white;
+                                   
+                                   a{
+                                        font-weight:lighter
+                                   }
+                              }
+                         }
+                         div{
+                              span{
+                                   color:#808080;
+                              }
+                              text-align: left;
+                              margin:15px;
+                              width: 30%;
+                              height: 60%;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: flex-start;
+                              justify-content: space-evenly;
+                              margin-left: 20px;
+                         }
+                         a{
+                              text-decoration:none;
+                              color:$white;
+                         }
+                    }
+                    .collapse{
+                         ul{
+                             
+                             overflow:hidden;
+                             max-height:0;
+                             transition: all .5s ease;
+                         }
+                    }
+               }
+          }
+          
+      }
+   
+
+
+     /*-------------------HERO-SECTION--------------------*/
+      .hero{
+           background:$white;
+           height:90vh;
+           min-width:100vw;
+           .section-id{
+                position:absolute;
+                bottom: 515px;
+               left: 5px;
+           }
+           .hero-wrap{
+                @media(min-width:992px){
+                     
+                         min-width:100vw;
+                     .hero-title{
+                          height:100%!important;
+                          padding-left:100px;
+                     }
+                     .hero-image{
+                          background:url("../../assets/img/background-hero-lg.png")!important;
+                          background-size:cover!important;
+
+                     }
+                }
+                height:100%;
+                .row{
+                     height:100%;
+                     
+                     .hero-title{
+                          
+                          height:45%;
+                         h1{
+                              @media(max-height:550px){
+                                   font-size:30px;
+                              }
+                             font-weight:bold;
+                             font-size:40px;
+                              padding-left:15px;
+                          }
+                          h3{
+                              font-size:20px;
+                              padding-left:15px;
+                              
+                          }
+                          button{
+                               background:$orange;
+                               color:white;
+                               width:212px;
+                               height:6vh;
+                               text-align:center;
+                               margin-left:15px;
+                               margin-top:25px;
+                               border-radius:22px;
+                               box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.16);
+                               border:none;
+                          }
+                     }
+                   .hero-image{
+                        min-height:55%;
+                        width:100vw;
+                        background:url('../../assets/img/background-hero.png');
+                        background-size:cover;
+                        background-repeat: no-repeat;
+                   }
+                }
+           }
+      }
+
+
+     /*-------------------STICKY FORM--------------------*/
+
+
+
+      #form{
+               top:0;
+               @media(min-width:992px){
+                    width:50%;
+               }
+               .container{
+                    .escape-form{
+                         display:flex;
+                         align-items:flex-start;
+                         justify-content: flex-end;
+                         font-size:1.5em;
+                         padding:5px!important;
+                    }
+                    .add-file{
+                         display:flex;
+                         align-items:center;
+                         justify-content: center;
+                         color:white;
+                         font-size:15px;
+                         padding:0!important;
+                         p{
+                              margin-bottom:0;
+                              margin-left:1em;
+                         }
+                    }
+                   
+                    .form-menu {
+                         @media (min-width:992px){
+                              justify-content:center;
+                         }
+                         .borders{
+                        
+                              padding:1px;
+                              padding-bottom:10px;
+                              padding-left:15px;
+                              margin-right: 10px;
+                              line-height: 1.3;
+                              input, textarea{
+                                   background:black;
+                                   border:none;
+                                   color:white;
+                                  
+                                   font-size:15px;
+                              }
+                              textarea{
+                                   height:29.5vh;
+                              }
+                              div{
+                                   color:$orange;
+                                   text-align:right;
+                                   font-size:11px;
+                                   margin-right:10px;
+                              }
+                              span{
+                                   font-size:11px;
+                                   color:gray;
+                              }
+                              i{   
+                                   font-size:1.5em;
+                                   color:#fff;
+                              }
+                              height:11vh;
+                              border-bottom:1px solid #F5F5F5;
+                         }
+                    }
+                    .area{
+                         height:35.5vh!important;
+                    }
+               }
+               
+          }
+
+
+     /*-------------------HERO-DESCRIPTION--------------------*/
+     #hero-description{
+          padding:25px;
+          @media(min-width:992px){
+               min-width:90vw;
+               .row{
+                    flex-direction: row-reverse!important;
+               }
+          }
+          .description-title{
+               padding-top:45px;
+               padding:10px;
+               @media(min-width:992px){
+                    max-width:50%;
+                    h3{
+                         font-size:3em!important;
+                    }
+               }
+               h3{
+                    font-weight: bold;
+                    font-size:20px;
+               }
+               p{
+                    padding-top:20px;
+               }
+          }
+          .row{
+              
+               .description-companies{
+                    @media (min-width:992px){
+                         height:100%;
+                    }
+                    div{
+                         p{
+                              font-size:1em;
+                              color:$gray-font;
+                              font-weight:100;
+                         }
+                         h4{
+                              font-size:20px;
+                              font-weight: bold;
+                         }
+                         border-top:1px solid $white;
+                         border-left:1px solid $white;
+                         padding:25px;
+                    }
+                   
+               }
+          }
+          .partners{
+               position: relative;
+               padding:70px 30px 90px 30px;
+             
+               .row{
+                    @media(min-width:992px){
+                         justify-content: flex-end;
+                         width:95%;
+                    }
+                    @media(min-width:1502px){
+                         justify-content: flex-end;
+                         width:85%;
+                    }
+                    @media(min-width:1920px){
+                         justify-content: flex-end;
+                         width:70%;
+                    }
+                     @media(min-width:1920px){
+                         justify-content: flex-end;
+                         width:70%;
+                    }
+                    h4{
+                         font-weight: bold;
+                    }
+                    img {max-width:100%; height:auto}
+                    div{
+                         position: relative;
+                         z-index:1;
+                    }
+                    .background{
+                        
+                         z-index:0;
+                         position:absolute;
+                         height:280px;
+                         bottom:0;
+                         left:0;
+                         background-size:cover!important;
+                         background:url('../../assets/img/gray-paths.png');
+                    }
+               }
+               
+          }
+     }
+     /*-------------------REVIEW-------------------*/
+     #review{
+          min-height:100vh;
+          min-width:100vw;
+          padding:0 30px;
+          position:relative;
+          display:flex;
+               justify-content: center;
+               align-items: center;
+          background-image: linear-gradient(white, $white);
+          .row{
+               text-align:center;
+               div{
+                    @media(min-width:992px){
+                         text-align:center;
+                         p{
+                              font-size:24px;
+                              width:50%;
+                              margin:100px auto;
+                         }
+                    }
+               }
+               p{
+                    font-size:1em;
+                    margin-bottom:50px;
+               }
+               img{
+                    margin-bottom:10px;
+               }
+               .background{
+                    @media(min-width:992px){
+                         background:url('../../assets/img/yellow-paths-lg.png');          
+                    }
+                    position:absolute;
+                    height:280px;
+                    bottom:0;
+                    left:0;
+                    background-size:cover!important;
+                    background:url('../../assets/img/yellow-paths.png');
+               }
+          }
+     }
+      /*-------------------FOOTER-------------------*/
+      footer{
+           padding:100px 35px 35px 35px!important;
+           .row{
+               }
+                display:flex;
+                align-items:center;
+                justify-content: center;
+                img{
+                     margin-bottom:30px;
+                }
+                p{
+                     line-height:20px;
+                     font-size:11px;
+                }
+           }
+
+      }
+     /*-------------------RECRUIT-------------------*/
+
+
+
+
+     .container-fluid{
+          width:400px;
+          overflow-x:hidden;
+         
+          .tree{
+               
+               position:absolute;
+               display:flex;
+               align-items:center;
+               left: 50%;
+               transform: translate(-150px, 0);
+               width:300px;
+               height:600px;
+               img{
+                    @media (min-width:576px){
+                         transform:scale(0.7);
+                    }
+                    transform:scale(0.5);
+                    margin-top:195px;
+                    margin-left:10px;
+               }
+          }
+          .row{
+               position: relative;
+               
+               display: flex;
+               align-items: center;
+               @media (max-width:576px){
+                    height:125px;
+               }
+               
+                   
+                    
+               
+               .section-title{
+                    position: absolute;
+                    top: 50%;
+                    left:50px;
+                    margin-top: -1.1em /* height divided by 2;; */;
+                    h2{
+                         font-size:1.5em;
+                         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+               }
+               p{
+                    line-height:22px!important;
+               }
+               .recruit-1{
+                    @media(max-width:576px){
+                         font-size:15px;
+                         margin-bottom:0;
+                         margin-top: 75px;
+                    }
+                    display:block;
+                    font-size:16px;
+                    margin-bottom:90px;
+                    margin-top:10px;
+                    justify-content:flex-end;
+                    text-align:right;
+                    margin-left:40px;
+               
+               }
+               .recruit-2{
+                    @media(max-width:576px){
+                         font-size:15px;
+                         margin-bottom:0;
+                         margin-top: 65px;
+                         margin-right:0;
+                    }
+                    margin-bottom:0;
+                    margin-right:40px;
+                    margin-left: 50px;
+                    justify-content:flex-start!important;
+                    display:block;
+                    font-size:16px;
+                    text-align:right;
+
+               }
+               .recruit-3{
+                    @media(max-width:576px){
+                         font-size:15px;
+                         margin-top: 29px;
+                         margin-left: 30px;
+                    }
+                    margin-bottom:0;
+                    margin-right:40px;
+                    justify-content:flex-start!important;
+                    display:block;
+                    font-size:16px;
+                    text-align:right;
+                    margin-top: 90px;
+                    margin-left: 50px;
+
+               }
+              
+          }
+     }
+
+
+@media (max-width:576px){
+     body{
+         
+         .container-fluid{
+             width:320px!important;
+     }}}

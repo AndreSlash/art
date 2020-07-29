@@ -1,0 +1,10 @@
+@media (max-width: 400px) {
+  body .container-fluid {
+    width: 320px !important;
+  }
+  body .container-fluid .row .recruit2 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=media_queries.css.map */
