@@ -289,10 +289,17 @@ body{
 
     }
     .section{
+          @media screen and (max-width: 992px) and (min-width: 600px){
+               height:60vh!important;
+               min-height:0;
+
+          }
          @media(min-width:992px){
               justify-content: center;
               min-width:100vw;
+
          }
+         max-width:none;
         .background{
             z-index:0!important;
             position:absolute;
@@ -311,7 +318,7 @@ body{
             background-size:cover!important;
             background:url('../../assets/img/white-path-rotated.png');
         }
-        height:100vh;
+        min-height:60vh;
         .counter{
             position:relative;
             width:100vw;
@@ -400,7 +407,7 @@ body{
     }
     #coop-3{
      @media (min-width:992px){
-          height:50vh;
+          min-height:50vh;
           .desc{
                display:flex;
                flex-direction: row-reverse;
@@ -419,6 +426,7 @@ body{
 #coop-4{
      @media(min-width:992px){
           min-width:0;
+          min-height:100vh;
           width:50%;
           float:left;
           .counter{
@@ -440,7 +448,7 @@ body{
 }
 #coop-5{
      @media(min-width:992px){
-          
+          min-height:100vh;
           min-width:0;
           width:50%;
           float:left;
@@ -450,6 +458,9 @@ body{
                }
                position:absolute;
                img{
+                    @media screen and (max-width: 1600px) and (min-width: 992px){
+                         display:none;
+                    }
                     position:relative;
                     left:-25vw;
                }
@@ -457,21 +468,151 @@ body{
      }    
     
 }
-    .sec6{
-         display:flex;
-         align-items: center;
-         justify-self: start;
-         padding:10px;
-         height:100vh;
-    }
-    .sec7{
-         height:100vh;
-    }
-    .sec8{
-         height:100vh;
-    }
+.last{
+     clear:both;
+     @media(min-width:992px){
+          margin:0 auto;
+          width:90vw;
+          max-width:none;
+     }
+     .row{
+          width:100%;
+          .sec{
+               display:flex;
+              justify-content:center;
+               margin-top:30px;
+               margin-bottom:30px;
+               height:40vh!important;
+               @media (min-width:992px){
+                    
+                    p{
+                         font-size:24px;
+                    }
+                    h3{
+                         font-size:48px;
+                    }
+               }
+               h3{
+                    font-weight: bold;
+               }
+          }
+          .sec6{
+               @media (max-width:560px){
+                    height:100vh!important;
+               }
+               @media (max-width:560px){
+                    height:100vh!important;
+               }
+               @media (min-width:1801px){
+                    position: relative;
+                    top:50vh!important;
+               }
+               @media screen and (max-width: 1800px) and (min-width: 1381px){
+                    position: relative;
+                    top:50vh!important;
+               }
+               @media screen and (max-width: 1380px) and (min-width: 1264px){
+                    position: relative;
+                    top:60vh!important;
+               }
+               @media screen and (max-width: 1263px) and (min-width: 992px){
+                    position: relative;
+                    top:70vh!important;
+               }
+               display:flex;
+                flex-direction: column;
+               justify-content: center;
+               height:100vh;
+               p, h3{
+                padding:20px;
+                    
+               }
+               
+          }
+          .sec7{
+               @media (max-width:560px){
+                    height:100vh!important;
+               }
+               @media (min-width:1801px){
+                    position: relative;
+                    top:50vh!important;
+               }
+               @media screen and (max-width: 1800px) and (min-width: 1381px){
+                    position: relative;
+                    top:50vh!important;
+               }
+               @media screen and (max-width: 1380px) and (min-width: 1264px){
+                    position: relative;
+                    top:60vh!important;
+               }
+               @media screen and (max-width: 1263px) and (min-width: 992px){
+                    position: relative;
+                    top:80vh!important;
+               }
+               @media (min-width:992px){
+                    top:80vh;
+                    p, h3{
+                         position: relative;
+                         left: 29.5vw;
+                    }
+                   
+
+               }
+           display:flex;
+            flex-direction: column;
+           justify-content: center;
+           height:100vh;
+           p, h3{
+            padding:20px;
+           }
+           img{
+            display:block;
+            margin:0 auto;
+            }
+      }
+          .sec8{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                height:100vh;
+                @media (min-width:1801px){
+                    position: relative;
+                    top:80vh!important;
+               }
+               @media screen and (max-width: 1800px) and (min-width: 1381px){
+                    position: relative;
+                    top:80vh!important;
+               }
+               @media screen and (max-width: 1380px) and (min-width: 1264px){
+                    position: relative;
+                    top:120vh!important;
+               }
+               @media screen and (max-width: 1263px) and (min-width: 992px){
+                    position: relative;
+                    top:120vh!important;
+               }
+           p, h3{
+                padding:20px;
+                
+           }
+           img{
+                @media (min-width:992px){
+                     display:none;
+                }
+                display:block;
+                margin:0 auto;
+                padding-top:10px;
+                }
+          }
+     }
+}
+
+    
     
     .gray{
+         @media(min-width:992px){
+              background:white;
+         }
         background:$white;
     }
 

@@ -225,10 +225,56 @@ body #form .container .area {
   height: 35.5vh !important;
 }
 
+@media (min-width: 992px) {
+  body .first {
+    margin-top: 100px;
+    max-width: 95vw;
+  }
+}
+
+@media (min-width: 992px) {
+  body .first .row div {
+    max-height: 500px;
+  }
+}
+
 body #hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(white));
   background-image: linear-gradient(#F5F5F5, white);
-  height: 100vh;
+}
+
+body #hero .counter {
+  position: relative;
+  width: 100vw;
+  height: 150px;
+  margin-bottom: 100px;
+}
+
+body #hero .counter h1 {
+  left: 15px;
+  position: absolute;
+  top: 00%;
+  font-size: 116px;
+  font-weight: bold;
+  color: white;
+}
+
+body #hero .counter p {
+  font-size: 40px;
+  color: black;
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+  left: 35px;
+  top: 45px;
+}
+
+@media (min-width: 992px) {
+  body #hero .container {
+    margin-right: 0;
+    max-width: none;
+    width: 50vw;
+  }
 }
 
 body #hero .container .row .job {
@@ -250,9 +296,60 @@ body span {
   font-weight: bold;
 }
 
+@media (min-width: 992px) {
+  body .worker-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  body .worker-1 .tile1 {
+    height: 100%;
+    top: 200px;
+  }
+  body .worker-1 .tile2 {
+    height: 100px;
+    top: 190px;
+  }
+  body .worker-1 .tile3 {
+    left: 50%;
+  }
+}
+
 body .worker-1 .row .worker-bg1 {
   background: url("../../assets/img/worker-bg1.png");
   background-size: cover;
+}
+
+@media (min-width: 992px) {
+  body .worker-1 .row .worker-bg1 {
+    background: none;
+  }
+}
+
+@media (min-width: 992px) {
+  body .worker-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    bottom: 200px;
+  }
+  body .worker-2 .tile1 {
+    height: 100%;
+    top: 200px;
+  }
+  body .worker-2 .tile2 {
+    height: 100px;
+    top: 190px;
+  }
+  body .worker-2 .tile3 {
+    left: 50%;
+  }
 }
 
 body .worker-2 .row .worker-bg2 {
@@ -261,16 +358,109 @@ body .worker-2 .row .worker-bg2 {
   background-size: cover;
 }
 
+@media (min-width: 992px) {
+  body .worker-2 .row .worker-bg2 {
+    background: none;
+  }
+}
+
+@media (min-width: 992px) {
+  body .worker-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 200px;
+  }
+  body .worker-3 .tile1 {
+    height: 100%;
+    top: 200px;
+  }
+  body .worker-3 .tile2 {
+    height: 100px;
+    top: 190px;
+  }
+  body .worker-3 .tile3 {
+    left: 50%;
+  }
+}
+
 body .worker-3 .row .worker-bg3 {
   min-height: 500px;
   background: url("../../assets/img/worker-bg3.png");
   background-size: cover;
 }
 
+@media (min-width: 992px) {
+  body .worker-3 .row .worker-bg3 {
+    background: none;
+  }
+}
+
+@media (min-width: 992px) {
+  body .worker-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  body .worker-4 .tile1 {
+    height: 100%;
+    top: 200px;
+  }
+  body .worker-4 .tile2 {
+    height: 100px;
+    top: 190px;
+  }
+  body .worker-4 .tile3 {
+    left: 50%;
+  }
+}
+
 body .worker-4 .row .worker-bg4 {
   min-height: 500px;
   background: url("../../assets/img/worker-bg4.png");
   background-size: cover;
+}
+
+@media (min-width: 992px) {
+  body .worker-4 .row .worker-bg4 {
+    background: none;
+  }
+}
+
+@media (min-width: 992px) {
+  body .worker-5 {
+    height: 100vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: none;
+  }
+  body .worker-5 .worker-bg5 {
+    background: none !important;
+  }
+  body .worker-5 h4 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  body .worker-5 p {
+    font-weight: bold;
+    font-size: 40px;
+    display: block;
+    width: 40vw;
+    float: left;
+  }
 }
 
 body .worker-5 .row .worker-bg5 {

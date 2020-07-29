@@ -185,9 +185,20 @@ body{
          /*-------------------HERO-------------------*/
  #hero{
      height:30vh;
+     width:100%;
+     @media (min-width:992px){
+          width: 50%;
+          float: left;
+     }
+
  }
  #tiles{
-     height:80vh;
+     @media(min-width:992px){
+          margin: 0;
+          width: 50%;
+          max-width:none;
+          float: left;
+     }
      .row{
          .tile{
              display:flex;
@@ -195,24 +206,46 @@ body{
              justify-content: space-evenly;
              flex-direction: column;
              width:100vw;
-             height:20vh;
-             background-repeat: no-repeat;
+             height:23.3vh;
+             background-repeat: no-repeat!important;
+             background-size:cover!important;
              &:nth-child(1){
                 background:url('../../assets/img/portfolio-1.png');
+                @media (min-width:992px){
+                    background:url('../../assets/img/portfolio1-lg.png');
+                  }
              }
              &:nth-child(2){
                 background:url('../../assets/img/portfolio-2.png');
+                @media (min-width:992px){
+                    background:url('../../assets/img/portfolio2-lg.png');
+                  }
              }
              &:nth-child(3){
                 background:url('../../assets/img/portfolio-3.png');
+                @media (min-width:992px){
+                    background:url('../../assets/img/portfolio3-lg.png');
+                  }
              }
              &:nth-child(4){
                 background:url('../../assets/img/portfolio-4.png');
+                @media (min-width:992px){
+                    background:url('../../assets/img/portfolio4-lg.png');
+                  }
              }
              p{
+                  padding-left:30px;
+               @media (min-width:992px){
+                    font-size:3em;
+                  }
                  font-weight: bold;
              }
              span{
+               padding-left:30px;
+                  @media (min-width:992px){
+                    font-size:1.5em;
+                  }
+                  
                  color:$gray-font;
              }
          }

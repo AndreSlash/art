@@ -15,7 +15,11 @@
     height:150px;
    
     h1{
-      
+      @media(min-width:992px){
+        font-size:297px;
+        left: 100px;
+        top: 100px;
+      }
        left:15px;
        position:absolute;
        top:00%;
@@ -25,13 +29,14 @@
     }
     p{
         @media (min-width:992px){
-            font-size: 20px;
+            font-size: 60px;
             color: black;
+            font-weight: bold;
             position: absolute;
             font-weight: bold;
+            font-size: 60px;
             left: 195px;
-            top: 40px;
-            top: -30px !important;
+            top: 260px !important;
         }
         font-size:40px;
         color:black;

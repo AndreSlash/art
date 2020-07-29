@@ -270,6 +270,25 @@ body #recruit {
   height: 90vh;
 }
 
+@media (min-width: 992px) {
+  body #recruit p {
+    font-size: 1.5em;
+  }
+}
+
+body #recruit .test {
+  display: none;
+}
+
+@media (min-width: 1182px) {
+  body #recruit .test {
+    display: block;
+    width: 40vw;
+    margin-left: 150px;
+    margin-top: 100px;
+  }
+}
+
 body #recruit .counter {
   position: relative;
   width: 100vw;
@@ -300,6 +319,12 @@ body #recruit .container-fluid {
   overflow-x: hidden;
 }
 
+@media (min-width: 1182px) {
+  body #recruit .container-fluid {
+    margin-left: calc(100% - 550px);
+  }
+}
+
 body #recruit .container-fluid .tree {
   position: absolute;
   display: -webkit-box;
@@ -313,6 +338,12 @@ body #recruit .container-fluid .tree {
           transform: translate(-150px, 0);
   width: 300px;
   height: 600px;
+}
+
+@media (min-width: 1182px) {
+  body #recruit .container-fluid .tree {
+    left: calc(100% - 350px);
+  }
 }
 
 body #recruit .container-fluid .tree img {
@@ -424,6 +455,10 @@ body #recruit .container-fluid .row .recruit-3 {
     margin-top: 29px;
     margin-left: 30px;
   }
+}
+
+body #jobs {
+  margin-bottom: 100px;
 }
 
 body #jobs .counter {

@@ -23,6 +23,14 @@
   color: white;
 }
 
+@media (min-width: 992px) {
+  .counter-main h1 {
+    font-size: 297px;
+    left: 100px;
+    top: 100px;
+  }
+}
+
 .counter-main p {
   font-size: 40px;
   color: black;
@@ -35,13 +43,14 @@
 
 @media (min-width: 992px) {
   .counter-main p {
-    font-size: 20px;
+    font-size: 60px;
     color: black;
+    font-weight: bold;
     position: absolute;
     font-weight: bold;
+    font-size: 60px;
     left: 195px;
-    top: 40px;
-    top: -30px !important;
+    top: 260px !important;
   }
 }
 

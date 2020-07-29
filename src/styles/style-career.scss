@@ -227,6 +227,21 @@ body{
 
      #recruit{
          height:90vh;
+         @media (min-width:992px){
+              p{
+               font-size:1.5em;
+              }
+         
+  }
+         .test{
+              display:none;
+              @media(min-width:1182px){
+                   display:block;
+               width: 40vw;
+               margin-left: 150px;
+               margin-top: 100px;
+              }
+         }
         .counter{
             position:relative;
             width:100vw;
@@ -241,6 +256,7 @@ body{
                color:$light-orange;
             }
             p{
+                
                 font-size:20px;
                 color:black;
                 position: absolute;
@@ -253,7 +269,10 @@ body{
          .container-fluid{
           width:400px;
           overflow-x:hidden;
+         @media(min-width:1182px){
+          margin-left: calc(100% - 550px);
          
+         }
           .tree{
                
                position:absolute;
@@ -263,6 +282,9 @@ body{
                transform: translate(-150px, 0);
                width:300px;
                height:600px;
+               @media (min-width:1182px){
+                    left: calc(100% - 350px);
+               }
                img{
                     @media (min-width:576px){
                          transform:scale(0.7);
@@ -277,6 +299,7 @@ body{
                
                display: flex;
                align-items: center;
+               
                @media (max-width:576px){
                     height:125px;
                }
@@ -352,6 +375,7 @@ body{
      }
      }
      #jobs{
+          margin-bottom:100px;
         .counter{
             position:relative;
             width:100vw;
