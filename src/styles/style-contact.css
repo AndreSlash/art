@@ -225,8 +225,44 @@ body #form .container .area {
   height: 35.5vh !important;
 }
 
+@media (min-width: 992px) {
+  body #hero .container {
+    max-width: none;
+  }
+}
+
 body #hero .container .row .info {
   padding-left: 35px;
+}
+
+@media (min-width: 992px) {
+  body #hero .container .row .info {
+    margin-left: auto;
+    font-size: 24px;
+    margin-right: calc(100% - 1400px);
+    margin-bottom: 200px;
+    position: relative;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 1920px) {
+  body #hero .container .row .info {
+    margin-right: calc(100% - 1700px);
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  body #hero .container .row .info {
+    margin-right: calc(100% - 1100px);
+    bottom: -200px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  body #hero .container .row .info {
+    margin-right: calc(100% - 1100px);
+  }
 }
 
 body #hero .container .row .info h4 {
@@ -235,6 +271,12 @@ body #hero .container .row .info h4 {
 
 body #hero .container .row .info span {
   font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  body #hero .container .row iframe {
+    height: 30vh;
+  }
 }
 
 @media (max-width: 576px) {

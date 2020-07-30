@@ -185,8 +185,29 @@ body{
          /*-------------------HERO-------------------*/
 #hero{
     .container{
+         @media(min-width:992px){
+              max-width:none;
+         }
         .row{
             .info{
+                 @media(min-width:992px){
+                    margin-left: auto;
+                    font-size: 24px;
+                    margin-right: calc(100% - 1400px);
+                    margin-bottom: 200px;
+                    position: relative;
+                    bottom: 0px;
+                 }
+                 @media(min-width:1920px){
+                    margin-right: calc(100% - 1700px);
+                 }
+                 @media(min-width:993px) and (max-width:1200px){
+                   margin-right: calc(100% - 1100px);
+                   bottom: -200px;
+                 }
+                 @media(min-width:1201px) and (max-width:1400px){
+                    margin-right: calc(100% - 1100px);
+                  }
                 padding-left:35px;
                 h4{
                     font-size:1em;
@@ -194,6 +215,11 @@ body{
                 span{
                     font-weight:bold;
                 }
+            }
+          iframe  {
+               @media(min-width:992px){
+                    height:30vh;
+               }
             }
         }
     }

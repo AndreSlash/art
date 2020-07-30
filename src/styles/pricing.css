@@ -1,8 +1,11 @@
 html {
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 100vh;
 }
 
 body {
+  overflow: hidden;
+  height: 100vh;
   background: #Ffffff;
   overflow-x: hidden;
   font-family: 'Roboto';
@@ -147,14 +150,19 @@ body .hero {
   background: #F5F5F5;
   position: relative;
   z-index: 1;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
   height: 93vh;
 }
 
 body .hero .container {
   height: 100%;
   padding: 0;
+}
+
+@media (min-width: 992px) {
+  body .hero .container {
+    max-width: none;
+    margin: 0 30px;
+  }
 }
 
 body .hero .container .row {
@@ -179,8 +187,34 @@ body .hero .container .title {
   height: 40%;
 }
 
+@media (min-width: 992px) {
+  body .hero .container .title {
+    height: 100%;
+  }
+  body .hero .container .title h1 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+  body .hero .container .title span {
+    font-size: 48px;
+  }
+  body .hero .container .title img {
+    display: block;
+    position: relative;
+    bottom: 100px;
+  }
+}
+
 body .hero .container .pricing-cells {
   height: 60%;
+}
+
+@media (min-width: 992px) {
+  body .hero .container .pricing-cells {
+    height: 100%;
+    font-size: 20px;
+    padding-left: 30px;
+  }
 }
 
 body .hero .container .pricing-cells .pricing-cell {
@@ -200,8 +234,22 @@ body .hero .container .pricing-cells .pricing-cell {
   padding-left: 15px;
 }
 
+body .hero .container .pricing-cells .pricing-cell:hover {
+  background: #FFB000;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  padding-left: 25px;
+}
+
 body .hero .container .pricing-cells .pricing-cell:first-child {
   border-top: 1px solid #8D8D8D;
+}
+
+@media (min-width: 992px) {
+  body .hero .container .pricing-cells .pricing-cell {
+    border-left: 1px solid #8D8D8D;
+  }
 }
 
 body #hero2 {
@@ -215,6 +263,12 @@ body #hero2 .pricing-cell {
   height: 25% !important;
 }
 
+@media (min-width: 992px) {
+  body #hero2 .pricing-cell {
+    height: 20%;
+  }
+}
+
 body #hero3 {
   z-index: 3;
   position: absolute;
@@ -224,6 +278,12 @@ body #hero3 {
 
 body #hero3 .pricing-cell {
   height: 25% !important;
+}
+
+@media (min-width: 992px) {
+  body #hero3 .pricing-cell {
+    height: 20%;
+  }
 }
 
 body #hero4 {
@@ -251,6 +311,12 @@ body #hero4 .pricing-cell {
   height: 25% !important;
 }
 
+@media (min-width: 992px) {
+  body #hero4 .pricing-cell {
+    height: 20% !important;
+  }
+}
+
 body #hero4 .pricing-cell input {
   border: none;
   border-bottom: 1px solid black !important;
@@ -268,6 +334,7 @@ body #hero4 .pricing-cell:last-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #FFB000;
 }
 
 body #hero4 .pricing-cell:last-child button {
@@ -275,12 +342,12 @@ body #hero4 .pricing-cell:last-child button {
   width: 160px;
   border: none;
   border-radius: 24px;
-  color: white;
+  color: black;
   background: #FFB000;
 }
 
 @media (max-width: 576px) {
-  body .container-fluid {
+  body .f-fluid {
     width: 320px !important;
   }
 }

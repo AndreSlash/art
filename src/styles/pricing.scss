@@ -1,9 +1,12 @@
 
 @import 'variables.scss';
 html{
-    overflow-x:hidden;
+    overflow: hidden;
+    height: 100vh;
 }
 body{
+    overflow: hidden;
+    height: 100vh;
      background:#Ffffff;
      overflow-x: hidden;
      font-family:'Roboto';
@@ -115,8 +118,14 @@ body{
           background:$white;
           position:relative;
           z-index:1;
-          transition:all .3s ease;          height:93vh;
+          
+          height:93vh;
+        
           .container{
+            @media (min-width:992px){
+                max-width:none;
+                margin:0 30px;
+            }
               height:100%;
               padding:0;
               .row{
@@ -130,12 +139,43 @@ body{
                   flex-direction: column;
                   justify-content: center;
                   height:40%;
+                  @media(min-width:992px){
+                      height:100%;
+                      h1{
+                        font-size:60px;
+                        font-weight:bold;
+                    }
+                    span{
+                        font-size:48px;
+                    }
+                    img{
+                        display: block;
+                        position: relative;
+                        bottom: 100px;
+                    }
+                  }
+                 
               }
               .pricing-cells{
+
+                  @media (min-width:992px){
+                    height:100%;
+                    font-size:20px;
+                    padding-left:30px
+                }
                   height:60%;
                   .pricing-cell{
+                      &:hover{
+                          background:$light-orange;
+                          transition: all .3s ease-in-out;
+                          cursor:pointer;
+                          padding-left:25px;
+                      }
                       &:first-child{
                           border-top:1px solid $gray-font;
+                      }
+                      @media (min-width:992px){
+                        border-left:1px solid $gray-font;
                       }
                       height:20%;
                       border-bottom:1px solid $gray-font;
@@ -156,6 +196,9 @@ body{
           left:100%;
           .pricing-cell{
               height:25%!important;
+              @media (min-width:992px){
+                height:20%;     
+               }
           }
       }
       #hero3{
@@ -165,6 +208,9 @@ body{
         left:100%;
         .pricing-cell{
             height:25%!important;
+            @media (min-width:992px){
+             height:20%;     
+            }
         }
     }
     #hero4{
@@ -179,6 +225,9 @@ body{
             justify-content: flex-start;
             align-items: flex-start;
             height:25%!important;
+            @media (min-width:992px){
+                height:20%!important;     
+            }
             input{
                 border:none;
                 border-bottom:1px solid black!important;
@@ -189,12 +238,13 @@ body{
                 display:flex;
                 align-items: center;
                 justify-content: center;
+                background:$light-orange;
                 button{
                     height:35px;
                     width:160px;
                     border:none;
                     border-radius:24px;
-                    color:white;
+                    color:black;
                     background:$light-orange;
                 }
             }
@@ -206,6 +256,6 @@ body{
 @media (max-width:576px){
      body{
          
-         .container-fluid{
+         .f-fluid{
              width:320px!important;
      }}}

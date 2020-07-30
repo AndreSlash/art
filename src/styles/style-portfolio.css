@@ -237,13 +237,22 @@ body #hero {
   }
 }
 
+body #tiles {
+  height: 63vh;
+}
+
 @media (min-width: 992px) {
   body #tiles {
+    height: auto;
     margin: 0;
     width: 50%;
     max-width: none;
     float: left;
   }
+}
+
+body #tiles .row {
+  height: 100%;
 }
 
 body #tiles .row .tile {
@@ -264,6 +273,12 @@ body #tiles .row .tile {
   height: 23.3vh;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+}
+
+@media (max-width: 992px) {
+  body #tiles .row .tile {
+    height: 25%;
+  }
 }
 
 body #tiles .row .tile:nth-child(1) {
@@ -328,6 +343,18 @@ body #tiles .row .tile span {
   }
 }
 
+body .art {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(white));
+  background-image: linear-gradient(#F5F5F5, white);
+}
+
+@media (min-width: 992px) {
+  body .art {
+    max-width: none;
+    height: 93vh;
+  }
+}
+
 body .art .row .article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,8 +372,30 @@ body .art .row .article {
   height: 55vh;
 }
 
+@media (min-width: 992px) {
+  body .art .row .article {
+    min-height: 93vh;
+  }
+}
+
 body .art .row .article p {
   padding: 10px;
+}
+
+@media (min-width: 1602px) {
+  body .art .row .article p {
+    padding-left: 100px;
+    padding-right: 200px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1601px) {
+  body .art .row .article p {
+    padding-left: 100px;
+    padding-right: 50px;
+    font-size: 24px;
+  }
 }
 
 body .art .row .article span {
@@ -355,29 +404,86 @@ body .art .row .article span {
   font-weight: bold;
 }
 
+@media (min-width: 992px) {
+  body .art .row .article span {
+    font-size: 60px;
+    padding-left: 100px;
+    padding-right: 300px;
+  }
+}
+
 body .art .row .article-image {
   width: 100vw;
   min-height: 40vh;
   background: url("../../assets/img/article-image1.png");
-  background-size: cover;
+  background-size: cover !important;
+}
+
+@media (min-width: 992px) {
+  body .art .row .article-image {
+    min-height: 93vh;
+    background: url("../../assets/img/article-image1-lg.png");
+  }
 }
 
 body .art .row .article-image2 {
   background: url("../../assets/img/article-image2.png");
+  background-size: cover !important;
+}
+
+@media (min-width: 992px) {
+  body .art .row .article-image2 {
+    background: url("../../assets/img/article-image2-lg.png");
+  }
 }
 
 body .art .row .article-image3 {
   background: url("../../assets/img/article-image3.png");
+  background-size: cover !important;
+}
+
+@media (min-width: 992px) {
+  body .art .row .article-image3 {
+    background: url("../../assets/img/article-image3-lg.png");
+  }
 }
 
 body .art .row .article-image4 {
   background: url("../../assets/img/article-image4.png");
+  background-size: cover !important;
+}
+
+@media (min-width: 992px) {
+  body .art .row .article-image4 {
+    background: url("../../assets/img/article-image4-lg.png");
+  }
 }
 
 body .art2 {
   background: url("../../assets/img/bald-path.png");
   background-size: cover;
   padding: 25px;
+}
+
+@media (min-width: 992px) {
+  body .art2 {
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .art2 span {
+    display: none;
+  }
+  body .art2 p {
+    display: none;
+  }
 }
 
 body .art2 span {
@@ -397,8 +503,74 @@ body .client-desc {
   margin-top: 50px;
 }
 
+@media (min-width: 992px) {
+  body .client-desc {
+    max-width: none;
+  }
+}
+
+body .client-desc .row .art {
+  background: white !important;
+}
+
+@media (min-width: 992px) {
+  body .client-desc .row .art {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .client-desc .row .art h1 {
+  font-size: 60px;
+  padding-left: 100px;
+  padding-right: 300px;
+}
+
+@media (max-width: 992px) {
+  body .client-desc .row .art h1 {
+    display: none;
+  }
+}
+
+body .client-desc .row .art h4 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 100px;
+  padding-right: 300px;
+}
+
+@media (max-width: 992px) {
+  body .client-desc .row .art h4 {
+    display: none;
+  }
+}
+
 body .client-desc .row .art p {
   padding: 10px;
+}
+
+@media (min-width: 1602px) {
+  body .client-desc .row .art p {
+    padding-left: 100px;
+    padding-right: 200px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1601px) {
+  body .client-desc .row .art p {
+    padding-left: 100px;
+    padding-right: 50px;
+    font-size: 24px;
+  }
 }
 
 body #review {
@@ -406,8 +578,19 @@ body #review {
   padding: 0 30px;
   overflow: hidden;
   position: relative;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#F5F5F5));
-  background-image: linear-gradient(white, #F5F5F5);
+  background: white !important;
+}
+
+@media (min-width: 650px) {
+  body #review {
+    max-width: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 body #review .row {
@@ -424,6 +607,13 @@ body #review .row img {
   margin-bottom: 10px;
 }
 
+@media (min-width: 992px) {
+  body #review .row div:nth-child(1) p {
+    font-size: 24px;
+    padding: 0 20vw;
+  }
+}
+
 body #review .row div:nth-child(2) {
   z-index: 2;
 }
@@ -437,9 +627,31 @@ body #review .row .background {
   background: url("../../assets/img/yellow-paths.png");
 }
 
+@media (min-width: 992px) and (max-width: 1500px) {
+  body #review .row .background {
+    background-size: cover;
+    height: 300px;
+    background: url("../../assets/img/yellow-paths-lg.png");
+  }
+}
+
+@media (min-width: 1501px) {
+  body #review .row .background {
+    background-size: cover;
+    height: 500px;
+    background: url("../../assets/img/yellow-paths-lg.png");
+  }
+}
+
 @media (max-width: 576px) {
   body .container-fluid {
     width: 320px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  body .container {
+    max-width: none;
   }
 }
 /*# sourceMappingURL=style-portfolio.css.map */

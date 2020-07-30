@@ -179,48 +179,114 @@ body{
 
          /*-------------------HERO-------------------*/
          #hero{
-            background-image:linear-gradient($white,white);
-             .counter{
-                 position:relative;
-                 width:100vw;
-                 height:150px;
-                
-                 h1{
-                    left:15px;
-                    position:absolute;
-                    top:00%;
-                    font-size:116px;
-                    font-weight: bold;
-                    color:white;
-                 }
-                 p{
-                     font-size:40px;
-                     color:black;
+          background-image:linear-gradient($white,white);
+           .counter{
+               position:relative;
+               width:100vw;
+               height:150px;
+              
+               h1{
+                  left:15px;
+                  position:absolute;
+                  top:00%;
+                  font-size:116px;
+                  font-weight: bold;
+                  color:white;
+               }
+               p{
+                   font-size:40px;
+                   color:black;
+                   position: absolute;
+                   top:0;
+                   font-weight:bold;
+                  left:35px;
+                  top:45px;
+               }
+           }
+           .container{
+              .row{
+                  .job{
+                      border-top:1px solid white;
+                      padding:35px;
+                      min-height:135px;
+                      .number{
+                       @media (min-width:992px){
+                            font-size:1.5em;
+                           }
+                         font-size:1em;
+                         color:$gray-font;
+                      }
+                      p{
+                           @media (min-width:992px){
+                            font-size:48px;
+                           }
+                          font-size:20px;
+                      }
+                  }
+              }
+           }
+           
+       }
+         #hero{
+          @media(min-width:992px){
+               height:100vh;
+          }
+          .container{
+               @media(min-width:992px){
+                height: 100%;
+                width:50vw;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+               }
+          }
+         .counter-main{
+           @media(min-width:992px){
+                height:100vh;
+                width:40vw;
+                float:left;
+                align-items: center;
+                justify-content: center;
+           }
+             position:relative;
+             width:100vw;
+             min-height:100px;
+            
+             h1{
+                  @media (min-width:992px){
+                     left: 60px;
                      position: absolute;
-                     top:0;
-                     font-weight:bold;
-                    left:35px;
-                    top:45px;
-                 }
+                     top: 190px;
+                     font-size: 297px;
+                     font-weight: bold;
+                     color: white;
+                  }
+                left:15px;
+                position:absolute;
+                top:00%;
+                font-size:116px;
+                font-weight: bold;
+                color:white;
              }
-             .container{
-                .row{
-                    .job{
-                        border-top:1px solid white;
-                        padding:35px;
-                        min-height:135px;
-                        .number{
-                           font-size:1em;
-                           color:$gray-font;
-                        }
-                        p{
-                            font-size:20px;
-                        }
-                    }
-                }
+             p{
+                @media (min-width:992px){
+                     font-size: 60px;
+                     color: black;
+                     position: absolute;
+                     font-weight: bold;
+                     left: 125px;
+                     top: 340px;
+                  }
+                 font-size:40px;
+                 color:black;
+                 position: absolute;
+                 font-weight:bold;
+                left:35px;
+                top:40px;
              }
-             
          }
+ 
+     }
      /*-------------------RECRUIT-------------------*/
 
 

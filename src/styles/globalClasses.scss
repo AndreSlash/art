@@ -121,6 +121,7 @@
     position:fixed;
     transform: translateY(-100%);
     top: 100%;
+    cursor:pointer;
     left: calc(100% - 80px);
 
     .send-msg{
@@ -129,8 +130,8 @@
         }
         width:100vw;
         height:6vh;
-        background:$orange;
-        border-radius:14px;
+        background:$light-orange;
+        border-radius:44px;
         padding:10px;
         transition: all .2s ease-in-out;
         text-align:center;

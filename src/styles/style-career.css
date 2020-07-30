@@ -262,8 +262,102 @@ body #hero .container .row .job .number {
   color: #8D8D8D;
 }
 
+@media (min-width: 992px) {
+  body #hero .container .row .job .number {
+    font-size: 1.5em;
+  }
+}
+
 body #hero .container .row .job p {
   font-size: 20px;
+}
+
+@media (min-width: 992px) {
+  body #hero .container .row .job p {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  body #hero {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 992px) {
+  body #hero .container {
+    height: 100%;
+    width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+body #hero .counter-main {
+  position: relative;
+  width: 100vw;
+  min-height: 100px;
+}
+
+@media (min-width: 992px) {
+  body #hero .counter-main {
+    height: 100vh;
+    width: 40vw;
+    float: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body #hero .counter-main h1 {
+  left: 15px;
+  position: absolute;
+  top: 00%;
+  font-size: 116px;
+  font-weight: bold;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  body #hero .counter-main h1 {
+    left: 60px;
+    position: absolute;
+    top: 190px;
+    font-size: 297px;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+body #hero .counter-main p {
+  font-size: 40px;
+  color: black;
+  position: absolute;
+  font-weight: bold;
+  left: 35px;
+  top: 40px;
+}
+
+@media (min-width: 992px) {
+  body #hero .counter-main p {
+    font-size: 60px;
+    color: black;
+    position: absolute;
+    font-weight: bold;
+    left: 125px;
+    top: 340px;
+  }
 }
 
 body #recruit {

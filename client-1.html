@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 400px)" href="src/media_queries.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -145,26 +145,28 @@
     </section>
     <article class="art container">
         <div class="row">
-            <div class="article col-12">
+            <div class="article col-12 col-lg-6">
                 <span>innoSHARE University 2019</span>
                 <p>Projekt zakładał przygotowanie kompleksowej komunikacji wizualnej dla wydarzenia ,,innoSHARE University 2019 - where science becomes a business". Na zlecenie Fundacja Polska Innowacyjna wykonaliśmy projekty graficzne m.in. strony internetowej, ulotek, smyczy, mapek przestrzeni na wydarzeniu 
                     i harmonogramu.  </p>
             </div>
-            <div class="article-image">
+            <div class="article-image col-12 col-lg-6">
 
             </div>
         </div>
     </article>
     <article class="container client-desc">
         <div class="row">
-            <div class="col-12 art">
+            <div class="col-12 col-lg-6 art ">
+                <h1>Opis projektu</h1>
                 <p>
                     Ponadto projekt graficzny strony 
                     WWW innoSHARE'19 został zakodowany przez zespół developerów przy uwzględnieniu wybranych 
                     z klientem funkcjonalności. Ze względu na międzynarodowy charakter eventu strona internetowa przetłumaczona została na język angielski. Dodatkowo funkcjonalnością była jej synchronizacja z Messengerem Fundacji Polska Innowacyjna.
                 </p>
+                <h4>Link do strony www.innoshare.com</h4>
             </div>
-            <div class="col-12 art2">
+            <div class="col-12 col-lg-6  art2">
                 <span>Link do strony</span>
                 <br>
                 <span>www.innoshare.pl</span>
@@ -172,9 +174,18 @@
                     Wykorzystane technologie:
                 </p>
                 <div class="d-flex">
-                    <img  src="assets/img/adobe.png" alt="">
-                    <img class="pl-3" src="assets/img/figma.png" alt="">
-                    <img class="pl-3" src="assets/img/wordpress.png" alt="">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="assets/img/adobe-lg.png">
+                        <img src="assets/img/adobe.png" alt="IfItDoesntMatchAnyMedia">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="assets/img/figma-lg.png">
+                        <img src="assets/img/figma.png" alt="IfItDoesntMatchAnyMedia">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="assets/img/wordpress-lg.png">
+                        <img src="assets/img/wordpress.png" alt="IfItDoesntMatchAnyMedia">
+                    </picture>
                 </div>
                
             </div>
@@ -188,7 +199,10 @@
                 </p>
             </div>
             <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-                <img src="assets/img/client-photo1.png" alt="">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="assets/img/client1-photo-lg.png">
+                    <img src="assets/img/client-photo1.png" alt="IfItDoesntMatchAnyMedia">
+                </picture>
                 <h4>Sławomir Olejnik / 
                     </h4>
                 <p class="mt-0">CEO Polska Innowacyjna</p>
