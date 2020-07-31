@@ -4,178 +4,10 @@ body{
      background:#Ffffff;
      overflow-x: hidden;
      font-family:'Roboto';
-     /*-------------------HERO-HEADER--------------------*/
-      #hero-header{
-           height:7vh;
-           width:100vw;
-           background:$white;
-           overflow:hidden;
-           display:block;
-           .header{
-               display:block;
-               width:100vw;
-               height:100%;
-               display:flex;
-               align-items: center;
-               justify-content: space-between;
-               .logo{
-                    margin:15px;
-                    img{
-                         width:24px;
-                         height:24px;
-                    }
-               }
-               .hamburger-div{
-                    margin:15px;
-                    position:relative;
-                    z-index:100;
-                   
-               }
-          }
-          nav{
-               width: 100%;
-               height:100vh;
-               position: fixed;
-               background: black;
-               left: 100%;
-               transition: all .2s ease-in;
-               z-index: 99;
-               -webkit-transition: all .2s ease-in-out;
-               transition: all .2s ease-in-out;
-               top:0;
-               overflow-y: scroll;
-               .mainmenu{
-                    padding:0;
-                    width:100%;
-                    height:100%;
-                    li{
-                         width:100%;
-                         display:flex;
-                         justify-content: center;
-                         flex-direction:column;
-                         min-height:80px;
-                         border:1px solid #4B4B4B;
-                         a{
-                              font-weight:bold;
-                         }
-                         .submenu{
-                              padding:0;
-                              li{
-                                   
-                                   border:none;
-                                   text-align:left;
-                                   margin-top: 20px;
-                                   margin-bottom: 20px;
-                                   padding-left: 40px;
-                                   color:white;
-                                   
-                                   a{
-                                        font-weight:lighter
-                                   }
-                              }
-                         }
-                         div{
-                              span{
-                                   color:#808080;
-                              }
-                              text-align: left;
-                              margin:15px;
-                              width: 30%;
-                              height: 60%;
-                              display: flex;
-                              flex-direction: column;
-                              align-items: flex-start;
-                              justify-content: space-evenly;
-                              margin-left: 20px;
-                         }
-                         a{
-                              text-decoration:none;
-                              color:$white;
-                         }
-                    }
-                    .collapse{
-                         ul{
-                             
-                             overflow:hidden;
-                             max-height:0;
-                             transition: all .5s ease;
-                         }
-                    }
-               }
-          }
-          
-      }
-   
+    
 
 
-
-
-     /*-------------------STICKY FORM--------------------*/
-
-
-
-      #form{
-               top:0;
-               .container{
-                    .escape-form{
-                         display:flex;
-                         align-items:flex-start;
-                         justify-content: flex-end;
-                         font-size:1.5em;
-                         padding:5px!important;
-                    }
-                    .add-file{
-                         display:flex;
-                         align-items:center;
-                         justify-content: center;
-                         color:white;
-                         font-size:15px;
-                         padding:0!important;
-                         p{
-                              margin-bottom:0;
-                              margin-left:1em;
-                         }
-                    }
-                    .form-menu .borders{
-                         padding:1px;
-                         padding-bottom:10px;
-                         padding-left:15px;
-                         margin-right: 10px;
-                         line-height: 1.3;
-                         input, textarea{
-                              background:black;
-                              border:none;
-                              color:white;
-                             
-                              font-size:15px;
-                         }
-                         textarea{
-                              height:29.5vh;
-                         }
-                         div{
-                              color:$orange;
-                              text-align:right;
-                              font-size:11px;
-                              margin-right:10px;
-                         }
-                         span{
-                              font-size:11px;
-                              color:gray;
-                         }
-                         i{   
-                              font-size:1.5em;
-                              color:#fff;
-                         }
-                         height:11vh;
-                         border-bottom:1px solid #F5F5F5;
-                    }
-                    .area{
-                         height:35.5vh!important;
-                    }
-               }
-               
-          }
-
+    
 
          /*-------------------HERO-------------------*/
          #hero{
@@ -301,42 +133,55 @@ body{
   }
          .test{
               display:none;
-              @media(min-width:1182px){
+              @media(min-width:1282px){
                    display:block;
                width: 40vw;
                margin-left: 150px;
                margin-top: 100px;
               }
          }
-        .counter{
-            position:relative;
-            width:100vw;
-            min-height:100px;
-           
-            h1{
-               left:15px;
-               position:absolute;
-               top:00%;
-               font-size:116px;
-               font-weight: bold;
-               color:$light-orange;
-            }
-            p{
-                
-                font-size:20px;
-                color:black;
-                position: absolute;
-                top:0;
-                font-weight:bold;
-               left:35px;
-               top:60px;
-            }
-        }
+         .counter{
+          @media(min-width:992px){
+              bottom:100px;
+              margin-bottom:0;
+          }
+         
+         position:relative;
+         width:100vw;
+         height:150px;
+        margin-bottom:100px;
+         h1{
+              @media(min-width:992px){
+                   font-size:297px;
+                   left: 90px;
+              }
+            left:15px;
+            position:absolute;
+            top:00%;
+            font-size:116px;
+            font-weight: bold;
+            color:$light-orange!important;
+         }
+         p{
+              @media(min-width:992px){
+                   top: 150px !important;
+                   left: 187px;
+                   font-size:60px;
+              }
+             font-size:40px;
+             color:black!important;
+             position: absolute;
+             top:0;
+             font-weight:bold;
+            left:35px;
+            top:45px;
+         }
+     }
          .container-fluid{
           width:400px;
           overflow-x:hidden;
-         @media(min-width:1182px){
-          margin-left: calc(100% - 550px);
+         @media(min-width:1282px){
+          margin-left: calc(100% - 600px);
          
          }
           .tree{
@@ -348,8 +193,8 @@ body{
                transform: translate(-150px, 0);
                width:300px;
                height:600px;
-               @media (min-width:1182px){
-                    left: calc(100% - 350px);
+               @media (min-width:1282px){
+                    left: calc(100% - 400px);
                }
                img{
                     @media (min-width:576px){
@@ -442,30 +287,50 @@ body{
      }
      #jobs{
           margin-bottom:100px;
-        .counter{
-            position:relative;
-            width:100vw;
-            min-height:100px;
-           
-            h1{
-               left:15px;
-               position:absolute;
-               top:00%;
-               font-size:116px;
-               font-weight: bold;
-               color:$light-orange;
-            }
-            p{
-                font-size:20px;
-                color:black;
-                position: absolute;
-                top:0;
-                font-weight:bold;
-               left:35px;
-               top:60px;
-            }
-        }
+          
+          .counter{
+               @media(min-width:992px){
+                   bottom:100px;
+                   margin-bottom:0;
+               }
+              @media(max-width:1400px){
+                   margin-top:200px;
+              }
+              position:relative;
+              width:100vw;
+              height:150px;
+             margin-bottom:100px;
+              h1{
+                   @media(min-width:992px){
+                        font-size:297px;
+                        left: 90px;
+                   }
+                 left:15px;
+                 position:absolute;
+                 top:00%;
+                 font-size:116px;
+                 font-weight: bold;
+                 color:$light-orange!important;
+              }
+              p{
+                   @media(min-width:992px){
+                        top: 150px !important;
+                        left: 187px;
+                        font-size:60px;
+                   }
+                  font-size:40px;
+                  color:black!important;
+                  position: absolute;
+                  top:0;
+                  font-weight:bold;
+                 left:35px;
+                 top:45px;
+              }
+          }
         .container{
+             @media(min-width:992px){
+                  margin-top:100px;
+             }
             .row{
                 .offer{
                      &:first-child{

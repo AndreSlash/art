@@ -5,7 +5,7 @@ let navBurger=document.getElementById("nav-burger");
 let nav=document.getElementById("nav");
 let burgerbutton=document.getElementById("hamburger");
 
-
+let img=document.getElementById("forward-arrow");
 let hero1=document.getElementById("hero");
 let hero2=document.getElementById("hero2");
 let hero3=document.getElementById("hero3");
@@ -38,17 +38,33 @@ back_arrow2.addEventListener("click",()=>{
     hero1.classList.remove("back");
     hero1.classList.add("bring");
 })
-pricing1.addEventListener("click",()=>{
-    hero2.classList.add("bring");
-    hero1.classList.add("back");
-})
+
+
+
+
+pricing1.querySelectorAll("div").forEach(function(item) {
+    item.addEventListener('click', function() {
+        item.querySelector("input").checked=true;
+        hero2.classList.add("bring");
+        hero1.classList.add("back");
+    });
+});
+
+
 
 back_arrow3.addEventListener("click",()=>{
     hero3.classList.remove("bring");
     hero2.classList.remove("back");
     hero2.classList.add("bring");
 })
-pricing2.addEventListener("click",()=>{
+pricing2.querySelectorAll(".nofile").forEach(function(item) {
+    item.addEventListener('click', function() {
+        item.querySelector("input").checked=true;
+        hero3.classList.add("bring");
+        hero2.classList.add("back");
+    });
+});
+img.addEventListener("click",()=>{
     hero3.classList.add("bring");
     hero2.classList.add("back");
 })
@@ -58,7 +74,13 @@ back_arrow4.addEventListener("click",()=>{
     hero3.classList.remove("back");
     hero3.classList.add("bring");
 })
-pricing3.addEventListener("click",()=>{
-    hero4.classList.add("bring");
-    hero3.classList.add("back");
-})
+pricing3.querySelectorAll("div").forEach(function(item) {
+    item.addEventListener('click', function() {
+        
+        item.querySelector("input").checked=true;
+        hero4.classList.add("bring");
+        hero3.classList.add("back");
+    });
+});
+
+

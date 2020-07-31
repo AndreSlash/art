@@ -12,6 +12,7 @@ click.addEventListener("click",()=>{
     postIcon.classList.toggle("d-none");
 });
 navBurger.addEventListener("click",()=>{
+    navBurger.classList.toggle("fix");
     nav.classList.toggle("nav-toggle");
     burgerbutton.classList.toggle("is-active");
     burgerbutton.querySelector(".hamburger-inner").classList.toggle("color");
