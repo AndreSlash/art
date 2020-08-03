@@ -71,6 +71,7 @@
 }
 
 #hero-header nav .mainmenu li {
+  cursor: pointer;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,6 +183,38 @@
   padding: 5px !important;
 }
 
+#form .container .escape-form img {
+  width: 40px;
+  height: 65px;
+  cursor: pointer;
+  padding-top: 25px;
+}
+
+@media (max-width: 992px) {
+  #form .container .escape-form img {
+    width: 20px;
+    margin-right: 12px;
+    height: 45px;
+  }
+}
+
+#form .container .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 200;
+  background: #FFB000;
+}
+
+#form .container .submit input {
+  background: none !important;
+  color: black !important;
+}
+
 #form .container .add-file {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,6 +244,16 @@
 }
 
 #form .container .form-menu .borders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 1px;
   padding-bottom: 10px;
   padding-left: 15px;
@@ -218,6 +261,29 @@
   line-height: 1.3;
   height: 11vh;
   border-bottom: 1px solid #F5F5F5;
+}
+
+#form .container .form-menu .borders label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#form .container .form-menu .borders label img {
+  width: 55px;
+  height: 55px;
+}
+
+@media (max-width: 992px) {
+  #form .container .form-menu .borders label img {
+    width: 35px;
+    margin-right: 12px;
+    height: 35px;
+  }
 }
 
 #form .container .form-menu .borders input, #form .container .form-menu .borders textarea {
@@ -454,6 +520,7 @@
 }
 
 #burger .send-msg {
+  display: block;
   width: 100vw;
   height: 6vh;
   background: #FFB000;

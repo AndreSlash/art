@@ -85,6 +85,10 @@ body #tiles .row a:hover {
           filter: contrast(0.5);
 }
 
+body #tiles .row a .tile {
+  padding-top: 40px;
+}
+
 body #tiles .row a:nth-child(1) .tile {
   background: url("../../assets/img/portfolio-1.png");
 }

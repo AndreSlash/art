@@ -100,52 +100,64 @@
             </div>
         </span>
         <div id="form" >
-            <div class="container">
-                <div class="row form-menu">
-                    <div class="col-12 borders escape-form">
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-12 borders">
-                        <span class="name-surname">
-                            Imię i Nazwisko
-                        </span><br>
-                        <input type="text">
-                        <div class="form-foot">
-                            <p>
-                                Proszę podać poprawne imię i nazwisko
-                            </p> 
+            <form action="email.php" method="POST">
+                <div class="container">
+                    <div class="row form-menu">
+                        <div class="col-12 col-lg-10 borders escape-form align-items-end">
+                            <img id="escape-icon" src="assets/img/icon.png" alt="">
                         </div>
-                    </div>
-                    <div class="col-12 borders">
-                        <span class="email">
-                            Adres Email
-                        </span><br>
-                        <input type="text">
-                        <div class="form-foot">
-                            Proszę podać adres e-mail
+                        <div class="col-12 col-lg-10 borders">
+                            <span class="name-surname">
+                                Imię i Nazwisko
+                            </span><br>
+                            <input type="text" name="name">
+                            <div class="form-foot">
+                                <p>
+                                    Proszę podać poprawne imię i nazwisko
+                                </p> 
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 borders">
-                        <span class="telephone">
-                            Numer telefonu (opcjonalne)
-                        </span><br>
-                        <input type="text">
-                        <div class="form-foot">
-                            Proszę podać numer telefonu
+                        <div class="col-12 col-lg-10 borders">
+                            <span class="email">
+                                Adres Email
+                            </span><br>
+                            <input  type="email" id="email" name="email">
+                            <div class="form-foot">
+                                Proszę podać adres e-mail
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 borders area">
-                        <span class="content-form">
-                            Treść wiadomości
-                        </span><br>
-                        <textarea name="content-message" id="textarea1" cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="col-12 borders add-file">
-                        <i class="fa fa-plus"></i>
-                        <p>Zamieść plik</p>
+                        <div class="col-12 col-lg-10 borders">
+                            <span class="telephone">
+                                Numer telefonu (opcjonalne)
+                            </span><br>
+                            <input placeholder="123123123" type="tel" id="phone" name="phone"
+                            pattern="[0-9]{9}"
+                            required>
+                            <div class="form-foot">
+                                Proszę podać numer telefonu
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-10 borders area">
+                            <span class="content-form">
+                                Treść wiadomości
+                            </span><br>
+                            <textarea name="content-message" id="textarea1" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="col-12 col-lg-10 borders add-file">
+                            
+                            <label for="file-input">
+                                <img src="assets/img/icon2.png"/>
+                                <p>Wybierz plik!</p>
+                            </label>
+                            <input class="d-none" id="file-input" type="file" />
+
+                        </div>
+                        <div class="col-12 col-lg-10 borders submit">
+                            <input type="submit" value="Wyślij!">
+                        </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
     <article class="art container">

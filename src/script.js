@@ -1,4 +1,5 @@
 let click=document.getElementById("burger");
+let esc=document.getElementById("escape-icon");
 let click2=document.getElementById("form");
 let sendBtn=document.getElementById("send-msg-btn");
 let postIcon=document.getElementById("post-icon");
@@ -8,6 +9,13 @@ let burgerbutton=document.getElementById("hamburger");
 
 click.addEventListener("click",()=>{
     click2.classList.toggle("toggle");
+    sendBtn.classList.toggle("send-btn-toggle");
+    postIcon.classList.toggle("d-none");
+    click.classList.toggle("d-none");
+});
+esc.addEventListener("click",()=>{
+    click2.classList.toggle("toggle");
+    click.classList.toggle("d-none");
     sendBtn.classList.toggle("send-btn-toggle");
     postIcon.classList.toggle("d-none");
 });

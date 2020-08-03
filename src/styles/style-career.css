@@ -149,6 +149,12 @@ body #recruit {
   height: 90vh;
 }
 
+@media (min-width: 1600px) {
+  body #recruit {
+    height: 80vh;
+  }
+}
+
 @media (min-width: 992px) {
   body #recruit p {
     font-size: 1.5em;
@@ -415,6 +421,45 @@ body #jobs .counter p {
     left: 187px;
     font-size: 60px;
   }
+}
+
+@media (min-width: 992px) {
+  body #jobs .job-mobile {
+    display: none;
+  }
+}
+
+body #jobs .job-desktop {
+  margin: 0 auto;
+  max-width: none;
+  width: 70vw;
+}
+
+@media (max-width: 992px) {
+  body #jobs .job-desktop {
+    display: none;
+  }
+}
+
+body #jobs .job-desktop button {
+  background: #FFB000;
+  color: white;
+  width: 10vw;
+  font-size: 1.5em;
+  height: 6vh;
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 25px;
+  border-radius: 52px;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.16);
+  border: none;
+}
+
+body #jobs .job-desktop .row div {
+  margin-top: 100px;
+  padding: 15px;
+  border-top: 1px solid #F5F5F5;
 }
 
 @media (min-width: 992px) {

@@ -2,6 +2,14 @@
 @import 'variables.scss';
 html{
     overflow-x:hidden;
+    .right{
+     @media (min-width:1202px) and (max-width:1600px){
+     right:90px;
+     }
+     @media (min-width:1601px){
+          right:260px;
+          }
+     }
 }
 body{
      background:#Ffffff;
@@ -98,7 +106,8 @@ body{
          }
         
          .worker{
-              
+               
+     
           @media(min-width:992px){
                
                display: flex;
@@ -252,8 +261,5 @@ body{
              width:320px!important;
      }}}
 
-@media (min-width:992px){
-     .right{
-          right:90px;
-     }
-}
+
+   

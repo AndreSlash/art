@@ -2,6 +2,18 @@ html {
   overflow-x: hidden;
 }
 
+@media (min-width: 1202px) and (max-width: 1600px) {
+  html .right {
+    right: 90px;
+  }
+}
+
+@media (min-width: 1601px) {
+  html .right {
+    right: 260px;
+  }
+}
+
 body {
   background: #Ffffff;
   overflow-x: hidden;
@@ -278,12 +290,6 @@ body #technologies .row div .row div img {
 @media (max-width: 576px) {
   body .container-fluid {
     width: 320px !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .right {
-    right: 90px;
   }
 }
 /*# sourceMappingURL=style-aboutus.css.map */
